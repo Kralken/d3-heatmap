@@ -1,14 +1,17 @@
 {
-  "name": "d3-template",
-  "version": "0.0.1",
-  "description": "",
+  "name": "d3-heatmap",
+  "version": "1.0.0",
+  "homepage": "https://kralken.github.io/d3-heatmap",
+  "description": "Heatmap graph created with D3 for fcc certification",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server",
     "build": "webpack",
     "lint": "eslint \"src/**/*.{js,jsx}\"",
-    "lint:fix": "eslint \"src/**/*.{js,jsx}\" --fix"
+    "lint:fix": "eslint \"src/**/*.{js,jsx}\" --fix",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
@@ -23,6 +26,7 @@
     "eslint": "^8.41.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^5.5.1",
     "prettier": "^2.8.8",
     "style-loader": "^3.3.3",

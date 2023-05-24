@@ -1,0 +1,31 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: beige;
+}
+
+#chart-area {
+  background-color: aliceblue;
+  box-shadow: 10px 10px 20px grey;
+}
+
+#tooltip {
+  position: absolute;
+  background-color: white;
+  border: solid 3px black;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.footer {
+  position: relative;
+  top: 50px;
+  font-size: 1.5em;
+}
+
+.footer a {
+  color: black;
+}
