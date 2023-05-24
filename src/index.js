@@ -18,7 +18,9 @@ function colorRange(min, max, colors) {
   return output;
 }
 
-fetch('./global-temperature.json')
+fetch(
+  'https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/master/global-temperature.json',
+)
   .then((response) => response.json())
   .then((data) => {
     let height = 800;
